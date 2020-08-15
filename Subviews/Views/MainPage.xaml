@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Subviews;assembly=Subviews"
+             xmlns:views="clr-namespace:Subviews.Views;assembly=Subviews"
+             mc:Ignorable="d"
+             x:Class="Subviews.Views.MainPage">
+    <StackLayout Margin="16,32">
+        <!-- Place new controls here -->
+        <Label Text="{Binding TheText}" />
+        <views:TheSubview Text="{Binding TheText, Mode=TwoWay}" Title="{Binding TheTime}" />
+    </StackLayout>
+</ContentPage>
